@@ -598,7 +598,7 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
 .block--learned .pending-line { color: var(--sand); }
 .block--learned .pending-line::before { border-color: var(--sun); }
 .placeholder { position: relative; border: 2px dashed var(--teal); border-radius: 1rem; padding: 2.7rem 1.15rem 1.15rem; background: repeating-linear-gradient(-45deg, transparent 0 .7rem, rgba(31, 122, 110, .07) .7rem 1.4rem); }
-.placeholder::before { content: "Pending"; position: absolute; left: 1rem; top: .8rem; padding: .16rem .65rem; border-radius: 999px; background: var(--teal); color: #fff; font: 600 .78rem/1.3 var(--display); letter-spacing: .1em; text-transform: uppercase; }
+.placeholder::before { content: "In progress"; position: absolute; left: 1rem; top: .8rem; padding: .16rem .65rem; border-radius: 999px; background: var(--teal); color: #fff; font: 600 .78rem/1.3 var(--display); letter-spacing: .1em; text-transform: uppercase; }
 .placeholder > :last-child { margin-bottom: 0; }
 .placeholder--panel { display: grid; grid-template-columns: auto 1fr; gap: 1rem 1.2rem; align-items: center; padding: 3rem 1.25rem 1.4rem; }
 .placeholder--panel svg { width: 4rem; height: 4rem; color: var(--teal); }
@@ -881,7 +881,8 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
   .slide { height: auto !important; min-height: 0 !important; break-inside: avoid; }
   .slide + .slide { break-before: page; }
   .js .sheet, .sheet { display: block !important; min-height: 0 !important; animation: none !important; border-top: 0; break-before: page; }
-  .js [data-reveal], .js .toc > li, .js .task-card .stamp { opacity: 1 !important; transform: none !important; scale: 1 !important; }
+  .js [data-reveal], .js .toc > li, .js .task-card .stamp { opacity: 1 !important; transform: none !important; scale: 1 !important; transition: none !important; }
+  .js .hl-route path, .js .map-draw, .js .thanks-rose[data-reveal] { transition: none !important; }
   .js .hl-route path, .js .map-draw { stroke-dashoffset: 0 !important; }
   .rubric--analytic td { display: block !important; }
   .block > h3 { position: static !important; }

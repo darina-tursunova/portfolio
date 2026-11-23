@@ -228,8 +228,20 @@
     }
     if (el) {
       var host = el.closest('.sheet');
+      var direct = !!(host && opts.initial && host !== openSheet);
+      if (direct) {
+        // a direct link to a part of a sheet: "Back" leads to the module of that task
+        current = moduleSlideOf(host);
+        window.scrollTo(0, slideTop(current));
+      }
       if (host && host !== openSheet) showSheet(host, opts.from);
       if (host) el.scrollIntoView({ behavior: reduced.matches || opts.initial ? 'auto' : 'smooth', block: 'start' });
+      if (direct) {
+        // the layout settles after load: go to that part once more
+        window.addEventListener('load', function () {
+          if (openSheet === host) { el.scrollIntoView({ block: 'start' }); spySteps(); }
+        });
+      }
     }
   }
 

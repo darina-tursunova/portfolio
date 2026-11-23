@@ -10,9 +10,18 @@
 <meta property="og:description" content="E-portfolio for the course Professional Guidance of the Teacher: seven modules, ten practical tasks and what I learned from them.">
 <meta name="theme-color" content="#0E3B36">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%230E3B36'/%3E%3Ccircle cx='24' cy='24' r='17' fill='none' stroke='%23F6B93B' stroke-width='3'/%3E%3Cpath d='M24 9l6 15H18z' fill='%23E9583C'/%3E%3Cpath d='M24 39l-6-15h12z' fill='%23FBF5E9'/%3E%3Ccircle cx='24' cy='24' r='2.600' fill='%230E3B36'/%3E%3C/svg%3E">
-<script>document.documentElement.className = 'js';</script>
-<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+document.documentElement.className = 'js';
+// On a web server the two main fonts are fetched early. A page opened as a file skips this:
+// there the browser refuses a font preload, and the stylesheet loads the fonts anyway.
+if (location.protocol !== 'file:') {
+  ['fonts/bricolage-grotesque-latin.woff2', 'fonts/figtree-latin.woff2'].forEach(function (href) {
+    var l = document.createElement('link');
+    l.rel = 'preload'; l.as = 'font'; l.type = 'font/woff2'; l.crossOrigin = 'anonymous'; l.href = href;
+    document.head.appendChild(l);
+  });
+}
+</script>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -214,7 +223,7 @@
     <ul class="key-ideas" data-reveal style="--d:3">
         <li>Challenge, comprehension, reflection</li>
         <li>INSERT marking</li>
-        <li>“Bloom's chamomile”: six types of questions</li>
+        <li>“Bloom’s chamomile”: six types of questions</li>
         <li>Fact or opinion</li>
       </ul>
     </div>
@@ -425,7 +434,7 @@
   <section class="slide" id="self-assessment" data-title="Self-assessment">
     <div class="self-head">
       <h2 data-reveal><svg class="h-mark" aria-hidden="true" focusable="false"><use href="#i-compass"/><use href="#i-needle"/></svg>Self-assessment</h2>
-      <p class="lead" data-reveal style="--d:1">Criteria of assessment of the e-portfolio. I checked my work against each criterion; the last column is left for the teacher's mark.</p>
+      <p class="lead" data-reveal style="--d:1">Criteria of assessment of the e-portfolio. I checked my work against each criterion; the last column is left for the teacher’s mark.</p>
       <!-- decorative picture of the table: 60 % for creating, 40 % for defending -->
       <div class="split" aria-hidden="true" data-reveal style="--d:2">
         <div class="split-bar"><i style="flex:5"></i><i style="flex:5"></i><i style="flex:5"></i><i style="flex:5"></i><i style="flex:40" class="big"></i><b style="flex:10"></b><b style="flex:20"></b><b style="flex:10"></b></div>
@@ -675,7 +684,7 @@
             <blockquote class="for-pupils">
               <p>Welcome to the Great Steppe Quest. A guest from another country is coming to Kazakhstan, and you are the travel bloggers who must get ready. Do five tasks, from the easiest to the most difficult, check every fact and plan the best three-day trip.</p>
             </blockquote>
-            <p>The quest follows the three phases of the lesson from the lecture (Temple, Meredith and Steele, 1997): challenge, comprehension and reflection. It uses the techniques of the lecture: True/False statements with prediction, Bloom's chamomile, “Fact or Opinion”, Insert marks and “Tour guide for an alien”. I checked all the links on 23 November 2026. They opened without a login.</p>
+            <p>The quest follows the three phases of the lesson from the lecture (Temple, Meredith and Steele, 1997): challenge, comprehension and reflection. It uses the techniques of the lecture: True/False statements with prediction, Bloom’s chamomile, “Fact or Opinion”, INSERT marks and “Tour guide for an alien”. I checked all the links on 23 November 2026. They opened without a login.</p>
           </section>
 
           <section class="quest-overview">
@@ -693,7 +702,7 @@
               </thead>
               <tbody>
                 <tr><th scope="row">1</th><td>True or False Prediction</td><td>Challenge</td><td>Individual</td><td>4</td><td><span class="diff-n">1</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span></td></tr>
-                <tr><th scope="row">2</th><td>Bloom's Chamomile</td><td>Comprehension</td><td>Pairs</td><td>8</td><td><span class="diff-n">2</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></td></tr>
+                <tr><th scope="row">2</th><td>Bloom’s Chamomile</td><td>Comprehension</td><td>Pairs</td><td>8</td><td><span class="diff-n">2</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></td></tr>
                 <tr><th scope="row">3</th><td>Fact or Opinion</td><td>Comprehension</td><td>Pairs</td><td>6</td><td><span class="diff-n">3</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></td></tr>
                 <tr><th scope="row">4</th><td>Compare and Contrast (Venn diagram)</td><td>Comprehension</td><td>Pairs</td><td>7</td><td><span class="diff-n">4</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></td></tr>
                 <tr><th scope="row">5</th><td>Three Days in Kazakhstan</td><td>Reflection</td><td>Groups of 3–4</td><td>17</td><td><span class="diff-n">5</span> <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td></tr>
@@ -705,7 +714,7 @@
 
           <!-- ===================== TASK 1 ===================== -->
           <section class="quest-task" id="quest-task-1" data-quest-task="1" data-difficulty="1">
-            <h4><span class="qt-n">Task 1.</span> <span class="qt-name">True or False Prediction:</span> <span class="qt-do">Predict first, then open the page and check.</span></h4>
+            <h4><span class="qt-n">Task 1<span class="vh">.</span></span> <span class="qt-name">True or False Prediction<span class="vh">:</span></span> <span class="qt-do">Predict first, then open the page and check.</span></h4>
             <p class="task-link">Link: <a class="ext-btn" href="https://www.akorda.kz/en/republic_of_kazakhstan/kazakhstan" target="_blank" rel="noopener">The Republic of Kazakhstan<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> (official website of the President of the Republic of Kazakhstan)</p>
             <p class="task-meta"><span class="chip">Challenge</span><i class="sep"> · </i><span class="chip">individual</span><i class="sep"> · </i><span class="chip">4 minutes</span><i class="sep"> · </i><span class="chip chip--diff">difficulty 1 <span class="diff-bars" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span></span></p>
             <p><strong>Instruction for pupils:</strong></p>
@@ -744,7 +753,7 @@
 
           <!-- ===================== TASK 2 ===================== -->
           <section class="quest-task" id="quest-task-2" data-quest-task="2" data-difficulty="2">
-            <h4><span class="qt-n">Task 2.</span> <span class="qt-name">Bloom's Chamomile:</span> <span class="qt-do">Watch the video and answer six questions.</span></h4>
+            <h4><span class="qt-n">Task 2<span class="vh">.</span></span> <span class="qt-name">Bloom’s Chamomile<span class="vh">:</span></span> <span class="qt-do">Watch the video and answer six questions.</span></h4>
             <p class="task-link">Link: <a class="ext-btn" href="https://www.youtube.com/watch?v=1w17U5rUaJk" target="_blank" rel="noopener">Saryarka - Steppe and Lakes of Northern Kazakhstan (UNESCO/NHK)<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> (official YouTube channel of UNESCO, 2 minutes 51 seconds)</p>
             <p class="task-meta"><span class="chip">Comprehension</span><i class="sep"> · </i><span class="chip">pairs</span><i class="sep"> · </i><span class="chip">8 minutes</span><i class="sep"> · </i><span class="chip chip--diff">difficulty 2 <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></span></p>
             <p><strong>Instruction for pupils:</strong></p>
@@ -752,7 +761,7 @@
               <li>Open the link. Before you press Play, read the title of the video. Tell your partner what you expect to see.</li>
               <li>Before you watch, open Settings, choose “Audio track: English (original)” and turn on English subtitles. Then watch the video.</li>
               <li>Under the video click “...more” and read the short text.</li>
-              <li>With your partner answer the six questions, one for each petal of Bloom's chamomile. Write short answers of one or two sentences. Questions 4, 5 and 6 have no single right answer: give your reason.</li>
+              <li>With your partner answer the six questions, one for each petal of Bloom’s chamomile. Write short answers of one or two sentences. Questions 4, 5 and 6 have no single right answer: give your reason.</li>
             </ol>
             <p><strong>Useful words:</strong></p>
             <ul class="glossary">
@@ -763,12 +772,12 @@
               <li><strong>poaching</strong>: illegal hunting</li>
             </ul>
             <ol class="chamomile">
-              <li data-bloom="simple"><span class="bloom-type">Simple question.</span> Where is Saryarka, and which two kinds of landscape are protected there?</li>
-              <li data-bloom="clarifying"><span class="bloom-type">Clarifying question.</span> Do I understand correctly that Saryarka is one big national park?</li>
-              <li data-bloom="interpreting"><span class="bloom-type">Interpreting question.</span> Why do so many birds from Africa, Europe and South Asia stop at these lakes?</li>
-              <li data-bloom="creative"><span class="bloom-type">Creative question.</span> What would happen to the birds if the lakes of Saryarka dried up?</li>
-              <li data-bloom="evaluating"><span class="bloom-type">Evaluating question.</span> Is it a good idea to bring many tourists to a nature reserve? Give one argument for and one argument against.</li>
-              <li data-bloom="practical"><span class="bloom-type">Practical question.</span> You want to show Saryarka to a foreign guest. When is the best time to go, and what two rules must a visitor follow in a nature reserve?</li>
+              <li data-bloom="simple"><span class="bloom-type">Simple question<span class="vh">.</span></span> Where is Saryarka, and which two kinds of landscape are protected there?</li>
+              <li data-bloom="clarifying"><span class="bloom-type">Clarifying question<span class="vh">.</span></span> Do I understand correctly that Saryarka is one big national park?</li>
+              <li data-bloom="interpreting"><span class="bloom-type">Interpreting question<span class="vh">.</span></span> Why do so many birds from Africa, Europe and South Asia stop at these lakes?</li>
+              <li data-bloom="creative"><span class="bloom-type">Creative question<span class="vh">.</span></span> What would happen to the birds if the lakes of Saryarka dried up?</li>
+              <li data-bloom="evaluating"><span class="bloom-type">Evaluating question<span class="vh">.</span></span> Is it a good idea to bring many tourists to a nature reserve? Give one argument for and one argument against.</li>
+              <li data-bloom="practical"><span class="bloom-type">Practical question<span class="vh">.</span></span> You want to show Saryarka to a foreign guest. When is the best time to go, and what two rules must a visitor follow in a nature reserve?</li>
             </ol>
             <p><strong>Product:</strong> six short written answers in the notebook. Pairs share their answers to questions 4–6 aloud.</p>
             <p class="note">Extension for fast pairs: write one more question of any type for another pair.</p>
@@ -777,10 +786,10 @@
               <ol class="key-list">
                 <li>It is in the north of Kazakhstan. Steppe and lakes are protected there. (The answer is in the title of the video.)</li>
                 <li>Not exactly. It consists of two protected areas: Naurzum State Nature Reserve and Korgalzhyn State Nature Reserve. (The text under the video names both.)</li>
-                <li>The lakes lie on the birds' long route to Siberia. The birds stop here to rest and to feed. (The text under the video calls the lakes stopover points.)</li>
+                <li>The lakes lie on the birds’ long route to Siberia. The birds stop here to rest and to feed. (The text under the video calls the lakes stopover points.)</li>
                 <li>Model answer: the birds would lose a place to rest and to find food, so many of them could not finish their journey. Any logical idea is right.</li>
                 <li>Model answer: for, because tourists learn about nature and their money helps to protect it; against, because noise and litter can frighten the birds and animals. A good answer has two different arguments.</li>
-                <li>Model answer: in spring or autumn, when the birds migrate. Rules: be quiet and keep your distance from the birds; do not leave litter. The <a href="https://kazakhstan.travel/en/regions/akmola-province" target="_blank" rel="noopener">Akmola Region page of the tourism portal</a> says that birdwatchers come to the Korgalzhyn reserve mostly in spring and autumn. The two rules are the pupils' own ideas.</li>
+                <li>Model answer: in spring or autumn, when the birds migrate. Rules: be quiet and keep your distance from the birds; do not leave litter. The <a href="https://kazakhstan.travel/en/regions/akmola-province" target="_blank" rel="noopener">Akmola Region page of the tourism portal</a> says that birdwatchers come to the Korgalzhyn reserve mostly in spring and autumn. The two rules are the pupils’ own ideas.</li>
               </ol>
               <p><strong>Success criteria:</strong> the answers to questions 1–3 agree with the title and the text under the video. For questions 4–6 I accept any answer in English that uses information from the video or its description and gives a reason.</p>
               <p>Local link: Naurzum is in Kostanay Region and Korgalzhyn is in Akmola Region.</p>
@@ -789,7 +798,7 @@
 
           <!-- ===================== TASK 3 ===================== -->
           <section class="quest-task" id="quest-task-3" data-quest-task="3" data-difficulty="3">
-            <h4><span class="qt-n">Task 3.</span> <span class="qt-name">Fact or Opinion:</span> <span class="qt-do">Read and write if it is a fact or an opinion.</span></h4>
+            <h4><span class="qt-n">Task 3<span class="vh">.</span></span> <span class="qt-name">Fact or Opinion<span class="vh">:</span></span> <span class="qt-do">Read and write if it is a fact or an opinion.</span></h4>
             <p class="task-link">Link: <a class="ext-btn" href="https://kazakhstan.travel/en/faq/about_kazakhstan" target="_blank" rel="noopener">Why Kazakhstan?<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> (Kazakhstan.travel, the national tourism portal)</p>
             <p class="task-meta"><span class="chip">Comprehension</span><i class="sep"> · </i><span class="chip">pairs</span><i class="sep"> · </i><span class="chip">6 minutes</span><i class="sep"> · </i><span class="chip chip--diff">difficulty 3 <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></span></p>
             <p><strong>Instruction for pupils:</strong></p>
@@ -807,7 +816,7 @@
               <li data-answer="opinion" data-explain="“Breathtaking” is an opinion word: other people may not agree.">The landscapes of Kazakhstan are breathtaking.</li>
               <li data-answer="fact" data-explain="The page lists these landscapes, and you can check them on a map.">There are mountains, steppes, deserts, canyons and lakes in Kazakhstan.</li>
               <li data-answer="fact" data-explain="The page says it, and nationalities can be counted, so the statement can be checked.">People of many nationalities live in Kazakhstan.</li>
-              <li data-answer="opinion" data-explain="“Definitely worth” is the writer's advice. You cannot prove it.">Kazakhstan is definitely worth visiting.</li>
+              <li data-answer="opinion" data-explain="“Definitely worth” is the writer’s advice. You cannot prove it.">Kazakhstan is definitely worth visiting.</li>
               <li data-answer="fact" data-explain="These buildings exist and you can visit them. The page names them.">Travellers can see medieval underground mosques and mausoleums in Kazakhstan.</li>
               <li data-answer="opinion" data-explain="“Amazing” and “for every traveller” cannot be proved: people like different things.">Kazakhstan is an amazing country for every traveller.</li>
               <li data-answer="fact" data-explain="It can be checked with a number: the Almaty page in Task 4 gives the height of the rink, 1,691 m above sea level.">There is a high-mountain skating rink in Almaty.</li>
@@ -824,7 +833,7 @@
 
           <!-- ===================== TASK 4 ===================== -->
           <section class="quest-task" id="quest-task-4" data-quest-task="4" data-difficulty="4">
-            <h4><span class="qt-n">Task 4.</span> <span class="qt-name">Compare and Contrast:</span> <span class="qt-do">Read about Astana and Almaty and fill in the Venn diagram.</span></h4>
+            <h4><span class="qt-n">Task 4<span class="vh">.</span></span> <span class="qt-name">Compare and Contrast<span class="vh">:</span></span> <span class="qt-do">Read about Astana and Almaty and fill in the Venn diagram.</span></h4>
             <p class="task-link">Links: page A <a class="ext-btn" href="https://kazakhstan.travel/en/regions/astana" target="_blank" rel="noopener">Astana<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> and page B <a class="ext-btn" href="https://kazakhstan.travel/en/regions/almaty" target="_blank" rel="noopener">Almaty<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> (Kazakhstan.travel, the national tourism portal)</p>
             <p class="task-meta"><span class="chip">Comprehension</span><i class="sep"> · </i><span class="chip">pairs</span><i class="sep"> · </i><span class="chip">7 minutes</span><i class="sep"> · </i><span class="chip chip--diff">difficulty 4 <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></span></p>
             <p><strong>Instruction for pupils:</strong> work in pairs. Pupil A reads the page “Astana”. Pupil B reads the page “Almaty”.</p>
@@ -873,7 +882,7 @@
 
           <!-- ===================== TASK 5 ===================== -->
           <section class="quest-task" id="quest-task-5" data-quest-task="5" data-difficulty="5">
-            <h4><span class="qt-n">Task 5.</span> <span class="qt-name">Three Days in Kazakhstan:</span> <span class="qt-do">Plan a route for a foreign guest, write a blog post and give a pitch.</span></h4>
+            <h4><span class="qt-n">Task 5<span class="vh">.</span></span> <span class="qt-name">Three Days in Kazakhstan<span class="vh">:</span></span> <span class="qt-do">Plan a route for a foreign guest, write a blog post and give a pitch.</span></h4>
             <p class="task-link">Link: <a class="ext-btn" href="https://kazakhstan.travel/en/regions" target="_blank" rel="noopener">Regions of Kazakhstan<span class="vh"> (opens in a new tab)</span><svg aria-hidden="true" focusable="false"><use href="#i-ext"/></svg></a> (Kazakhstan.travel, the national tourism portal)</p>
             <p class="task-meta"><span class="chip">Reflection</span><i class="sep"> · </i><span class="chip">groups of 3–4</span><i class="sep"> · </i><span class="chip">17 minutes</span><i class="sep"> · </i><span class="chip chip--diff">difficulty 5 <span class="diff-bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span></p>
             <p><strong>Instruction for pupils:</strong> work in groups of three or four. A guest from another country is coming to Kazakhstan for only three days and knows nothing about it. You are the travel bloggers who plan the trip.</p>
@@ -974,7 +983,7 @@
       <section class="block block--aim" id="task-4-aim">
         <h3>Aim</h3>
         <div class="block-body">
-          <p>To learn to describe the quality of pupils' work in clear levels, so that a mark is transparent for the pupil and quicker to give for the teacher.</p>
+          <p>To learn to describe the quality of pupils’ work in clear levels, so that a mark is transparent for the pupil and quicker to give for the teacher.</p>
         </div>
       </section>
 
@@ -1021,7 +1030,7 @@
           <table class="rubric rubric--holistic">
             <thead><tr><th scope="col">Level</th><th scope="col">Description</th></tr></thead>
             <tbody>
-              <tr><th scope="row">A · Excellent</th><td>The group presents a complete and convincing route within two minutes. Every member speaks. The speech is clear and mostly fluent, with accurate topic vocabulary; the facts are correct and the group's opinion is supported by reasons. The group answers a question from the audience confidently.</td></tr>
+              <tr><th scope="row">A · Excellent</th><td>The group presents a complete and convincing route within two minutes. Every member speaks. The speech is clear and mostly fluent, with accurate topic vocabulary; the facts are correct and the group’s opinion is supported by reasons. The group answers a question from the audience confidently.</td></tr>
               <tr><th scope="row">B · Good</th><td>The route is complete and clear, but some reasons are missing. Most members speak. There are some pauses and language mistakes, but they do not prevent understanding. The group can answer a simple question.</td></tr>
               <tr><th scope="row">C · Satisfactory</th><td>The route is presented only in part, or the time limit is not kept. One or two members do most of the talking, the others read from notes. Frequent mistakes and long pauses make some parts hard to follow. Answers to questions are short or unclear.</td></tr>
               <tr><th scope="row">D · Needs improvement</th><td>The route is unclear or incomplete. The speech is read aloud or given by one member only. Mistakes and pauses prevent understanding. The group cannot answer questions.</td></tr>
@@ -1085,7 +1094,7 @@
             <div class="text-card-head"><svg aria-hidden="true" focusable="false"><use href="#i-book"/></svg><h4 id="task-5-text">The text</h4></div>
             <table class="text-table">
               <tbody>
-                <tr><th scope="row">Textbook</th><td>English Plus. Grade 6. Student's Book (Kazakhstan edition). Authors: Ben Wetz, Diana Pye</td></tr>
+                <tr><th scope="row">Textbook</th><td>English Plus. Grade 6. Student’s Book (Kazakhstan edition). Authors: Ben Wetz, Diana Pye</td></tr>
                 <tr><th scope="row">Publisher</th><td>Oxford University Press, first published 2018. ISBN 978 0 19 474386 0</td></tr>
                 <tr><th scope="row">Grade</th><td>6</td></tr>
                 <tr><th scope="row">Unit</th><td>Unit 3 “Our countryside”, reading lesson “The red list”</td></tr>
@@ -1093,8 +1102,8 @@
                 <tr><th scope="row">Title of the text</th><td>“Danger! Humans!” (an article of about 190 words)</td></tr>
               </tbody>
             </table>
-            <p class="text-summary"><strong>Summary in my own words:</strong> The article says that people are more dangerous to animals than animals are to people. It compares a few attacks by sharks and crocodiles with the millions of animals that people kill for food, fur or fun. It names animals from Kazakhstan's red list, explains the danger from pollution and construction, and asks readers to change.</p>
-            <p class="text-opening">Before the first paragraph there is a question for the reader: “Which is more dangerous: a shark, a chair or a person?” (Student's Book, p. 34).</p>
+            <p class="text-summary"><strong>Summary in my own words:</strong> The article says that people are more dangerous to animals than animals are to people. It compares a few attacks by sharks and crocodiles with the millions of animals that people kill for food, fur or fun. It names animals from Kazakhstan’s red list, explains the danger from pollution and construction, and asks readers to change.</p>
+            <p class="text-opening">Before the first paragraph there is a question for the reader: “Which is more dangerous: a shark, a chair or a person?” (Student’s Book, p. 34).</p>
             <p class="text-vocab-title"><strong>Key vocabulary:</strong></p>
             <ul class="vocab-list">
               <li>attack</li>
@@ -1113,7 +1122,7 @@
               <li>habitat</li>
               <li>save</li>
             </ul>
-            <p class="note">I do not copy the article here, because the book is protected by copyright. In class the pupils read it in the paper Student's Book, open at page 34.</p>
+            <p class="note">I do not copy the article here, because the book is protected by copyright. In class the pupils read it in the paper Student’s Book, open at page 34.</p>
           </section>
 
           <section class="abc-note" aria-labelledby="task-5-abc">
@@ -1135,7 +1144,7 @@
             <div class="rt-rows">
               <div class="rt-row" data-row="type">
                 <h5>Type from the lecture</h5>
-                <div class="rt-body"><p>Research activity and problematic learning from the slide “Forms of work with gifted and talented”. It is close to N. Timurzieva's example for the 8th–11th forms, “Compare texts and present the differences”, but I made it simpler for the 6th form.</p></div>
+                <div class="rt-body"><p>Research activity and problematic learning from the slide “Forms of work with gifted and talented”. It is close to N. Timurzieva’s example for the 8th–11th forms, “Compare texts and present the differences”, but I made it simpler for the 6th form.</p></div>
               </div>
               <div class="rt-row" data-row="instruction">
                 <h5>Instruction for the pupil</h5>
@@ -1143,7 +1152,7 @@
               <ol>
                 <li>Read the article again. Find three facts you can check: numbers (sharks, crocodiles, chairs) or the list of red-list animals. Write them on your card in your own words.</li>
                 <li>Look carefully: does the writer say where the facts come from? Circle YES or NO.</li>
-                <li>Choose one fact. Check it in two other sources. A source is a book or a website with information. Use an encyclopedia, a website your teacher gives you, or page 40 of your Student's Book for the red list. You can read in Kazakh or Russian, but write in English.</li>
+                <li>Choose one fact. Check it in two other sources. A source is a book or a website with information. Use an encyclopedia, a website your teacher gives you, or page 40 of your Student’s Book for the red list. You can read in Kazakh or Russian, but write in English.</li>
                 <li>Finish the sentences:
                   <ul>
                     <li>The article says …</li>
@@ -1152,7 +1161,7 @@
                     <li>The facts are: the same / a little different / very different.</li>
                   </ul>
                 </li>
-                <li>Think and write 2–3 sentences. Why can the facts be different? Is the writer's main idea still true? Why?</li>
+                <li>Think and write 2–3 sentences. Why can the facts be different? Is the writer’s main idea still true? Why?</li>
                 <li>Tell the class about your card in one minute.</li>
               </ol></div></div>
               </div>
@@ -1171,10 +1180,10 @@
               <li>Three facts are taken from the article and reported correctly.</li>
               <li>Two sources are named.</li>
               <li>The verdict matches what the sources say.</li>
-              <li>The conclusion gives a reason and says something about the writer's main idea.</li>
+              <li>The conclusion gives a reason and says something about the writer’s main idea.</li>
               <li>The report is clear.</li>
             </ul>
-            <p class="note">A different number in another source is not the pupil's mistake. Figures in different sources can differ, and noticing this is the aim of the task.</p></div>
+            <p class="note">A different number in another source is not the pupil’s mistake. Figures in different sources can differ, and noticing this is the aim of the task.</p></div>
               </div>
               <div class="rt-row" data-row="why">
                 <h5>Why it suits gifted pupils</h5>
@@ -1192,14 +1201,14 @@
             <div class="rt-rows">
               <div class="rt-row" data-row="type">
                 <h5>Type from the lecture</h5>
-                <div class="rt-body"><p>“Make a story-riddle”, one of N. Timurzieva's examples for the 5th–7th forms. It is a creative task.</p></div>
+                <div class="rt-body"><p>“Make a story-riddle”, one of N. Timurzieva’s examples for the 5th–7th forms. It is a creative task.</p></div>
               </div>
               <div class="rt-row" data-row="instruction">
                 <h5>Instruction for the pupil</h5>
                 <div class="rt-body"><div class="pupil-card"><ol>
-                <li>Read the last paragraph of the article again. Choose one animal from Kazakhstan's red list: a horse, a leopard, a wild dog, a lynx, an otter, a bat or a bear. Keep it secret.</li>
+                <li>Read the last paragraph of the article again. Choose one animal from Kazakhstan’s red list: a horse, a leopard, a wild dog, a lynx, an otter, a bat or a bear. Keep it secret.</li>
                 <li>Find three facts about this animal in Kazakhstan: where it lives, what it eats, why it is in danger. Use books or the internet.</li>
-                <li>Write a story-riddle of 6–8 sentences. Write as the animal: “I …”. Do not write the animal's name. Your riddle must have:
+                <li>Write a story-riddle of 6–8 sentences. Write as the animal: “I …”. Do not write the animal’s name. Your riddle must have:
                   <ul>
                     <li>the place where you live;</li>
                     <li>two sentences about what you are doing right now (present continuous: “I am hiding …”);</li>
@@ -1231,7 +1240,7 @@
               </div>
               <div class="rt-row" data-row="why">
                 <h5>Why it suits gifted pupils</h5>
-                <div class="rt-body"><p>the pupil turns information from the article and from his or her own reading into a new genre and a new point of view, the animal's. The clues must be not too easy and not too hard. The grammar of the unit (the present continuous on page 35) and the new words are used in a new situation. The lecture names both features for a child with aptitudes: an original performance and the use of skills in different situations. The type of giftedness is creativity.</p></div>
+                <div class="rt-body"><p>the pupil turns information from the article and from his or her own reading into a new genre and a new point of view, the animal’s. The clues must be not too easy and not too hard. The grammar of the unit (the present continuous on page 35) and the new words are used in a new situation. The lecture names both features for a child with aptitudes: an original performance and the use of skills in different situations. The type of giftedness is creativity.</p></div>
               </div>
             </div>
           </section>
@@ -1245,7 +1254,7 @@
             <div class="rt-rows">
               <div class="rt-row" data-row="type">
                 <h5>Type from the lecture</h5>
-                <div class="rt-body"><p>“Prepare the control questions for others”, one of N. Timurzieva's examples for the 5th–7th forms. I built it as a multileveled task: the pupil uses the idea of ABC planning for his or her own questions. The level C questions are close to her example for the 8th–11th forms, “Make up your own philosophic questions on the text”.</p></div>
+                <div class="rt-body"><p>“Prepare the control questions for others”, one of N. Timurzieva’s examples for the 5th–7th forms. I built it as a multi-level task: the pupil uses the idea of ABC planning for his or her own questions. The level C questions are close to her example for the 8th–11th forms, “Make up your own philosophic questions on the text”.</p></div>
               </div>
               <div class="rt-row" data-row="instruction">
                 <h5>Instruction for the pupil</h5>
@@ -1665,7 +1674,7 @@
               <table class="key-table">
                 <thead><tr><th scope="col">Points</th><th scope="col">Level</th><th scope="col">What it means for the teacher</th></tr></thead>
                 <tbody>
-                  <tr data-level="high"><th scope="row">31–45</th><td>Universal leader</td><td>The pupil is ready to take responsibility. Give him or her the role of the manager, but also teach to listen to the quiet members.</td></tr>
+                  <tr data-level="high"><th scope="row">31–45</th><td>Universal leader</td><td>The pupil is ready to take responsibility. Give him or her the role of the manager, but also teach him or her to listen to the quiet members.</td></tr>
                   <tr data-level="mid"><th scope="row">16–30</th><td>Situational leader</td><td>The pupil leads when the task is close to him or her. Offer the leading role in the topics he or she is good at.</td></tr>
                   <tr data-level="low"><th scope="row">0–15</th><td>Team player for now</td><td>Leadership is not shown yet, but it can be developed. Start with small roles: the writer or the speaker of the group.</td></tr>
                 </tbody>
@@ -1776,9 +1785,9 @@
             <ul>
               <li>Test 1 before a long project, to choose the managers of the groups and to see who needs a small first role.</li>
               <li>Test 2 after the project, as a reflection for the managers: “Was my style good for my group?”</li>
-              <li>Together with observation and J. Moreno's sociometry from the lecture. A self-assessment shows how a pupil sees himself or herself. Sociometry shows whom the class really chooses.</li>
+              <li>Together with observation and J. Moreno’s sociometry from the lecture. A self-assessment shows how a pupil sees himself or herself. Sociometry shows whom the class really chooses.</li>
             </ul>
-            <p class="note">Both tests are my own express tools based on the lecture (the ways of gaining leadership and B. Parygin's classification of leaders by style). They are not standardised psychological tests, so I would use the results to start a conversation, not to put a label on a pupil.</p>
+            <p class="note">Both tests are my own express tools based on the lecture (the ways of gaining leadership and B. Parygin’s classification of leaders by style). They are not standardised psychological tests, so I would use the results to start a conversation, not to put a label on a pupil.</p>
           </section>
         </div>
       </section>
@@ -1854,7 +1863,7 @@
               <p class="scale">1 = not ready at all … 5 = fully ready</p>
               <span class="scale-dots" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i></span></li>
             <li data-type="multi"><span class="q-type">Multiple choice</span><p class="q">What would help a teacher most in an inclusive class? Choose up to three.</p>
-              <ul><li>Special training courses</li><li>A teacher's assistant in the classroom</li><li>Fewer pupils in the class</li><li>Adapted textbooks and materials</li><li>Support from a psychologist or a special education teacher</li><li>An accessible building and equipment</li><li>Exchange of experience with colleagues</li></ul></li>
+              <ul><li>Special training courses</li><li>A teacher’s assistant in the classroom</li><li>Fewer pupils in the class</li><li>Adapted textbooks and materials</li><li>Support from a psychologist or a special education teacher</li><li>An accessible building and equipment</li><li>Exchange of experience with colleagues</li></ul></li>
             <li data-type="single"><span class="q-type">Single choice</span><p class="q">What is the main barrier to inclusive education in our schools today?</p>
               <ul><li>Not enough trained teachers</li><li>Not enough assistants and specialists</li><li>Buildings and equipment are not adapted</li><li>The attitude of parents and pupils</li><li>Too many pupils in one class</li><li>Other</li><li>I do not know</li></ul></li>
             <li data-type="multi"><span class="q-type">Multiple choice</span><p class="q">Which activities in a foreign language lesson suit an inclusive class best? Choose all that apply.</p>
@@ -1928,7 +1937,7 @@
         <div class="block-body">
           <div class="placeholder placeholder--panel" data-placeholder="survey-results">
             <svg aria-hidden="true" focusable="false"><use href="#i-progress"/></svg>
-            <p><strong>In progress.</strong> The review will be written after the questionnaire collects at least ten answers. Charts for questions 2–9 and my conclusions will appear here.</p>
+            <p>The review will be written after the questionnaire collects at least ten answers. Charts for questions 2–9 and my conclusions will appear here.</p>
           </div>
         </div>
       </section>
