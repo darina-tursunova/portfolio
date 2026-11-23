@@ -327,6 +327,25 @@
     set(''); // start with all four levels, stacked
   });
 
+  /* ------------------------------------- task 7: print the memo alone */
+
+  $$('[data-print-memo]').forEach(function (button) {
+    button.addEventListener('click', function () {
+      // one landscape page with nothing but the memo (see "print-memo" in the print styles)
+      var page = document.createElement('style');
+      page.textContent = '@page { size: A4 landscape; margin: 8mm; }';
+      document.head.appendChild(page);
+      root.classList.add('print-memo');
+      var done = function () {
+        root.classList.remove('print-memo');
+        if (page.parentNode) page.parentNode.removeChild(page);
+        window.removeEventListener('afterprint', done);
+      };
+      window.addEventListener('afterprint', done);
+      window.print();
+    });
+  });
+
   /* -------------------------------------------------------------- reveal */
 
   var revealables = $$('[data-reveal], .toc-map');

@@ -271,4 +271,104 @@
       }
     });
   }
+
+  /* ------------------- Task 3: True/False and Fact/Opinion self-checks */
+  // The statements are a plain list in the HTML (the key is in <details> below it).
+  // Here each statement gets two buttons; the answer is shown only after a click.
+
+  var KINDS = {
+    tf: { title: 'Try it: true or false?', options: [['true', 'True'], ['false', 'False']] },
+    fo: { title: 'Try it: fact or opinion?', options: [['fact', 'Fact'], ['opinion', 'Opinion']] }
+  };
+
+  $$('ol.quiz-tf, ol.quiz-fo').forEach(function (list) {
+    var kind = KINDS[list.classList.contains('quiz-tf') ? 'tf' : 'fo'];
+    var lis = $$('li[data-answer]', list);
+    if (!lis.length) return;
+    var total = lis.length, right = 0, done = 0;
+    var names = {};
+    kind.options.forEach(function (o) { names[o[0]] = o[1]; });
+
+    var wrap = el('div', 'sq');
+    var head = el('div', 'sq-head');
+    var score = el('p', 'sq-score');
+    var scoreNum = el('b', '', '0');
+    score.setAttribute('role', 'status');
+    score.setAttribute('aria-label', 'Score: 0 of ' + total);
+    score.appendChild(scoreNum);
+    score.appendChild(document.createTextNode(' / ' + total));
+    var reset = el('button', 'sq-reset', 'Reset');
+    reset.type = 'button';
+    head.appendChild(el('p', 'sq-title', kind.title));
+    head.appendChild(score);
+    head.appendChild(reset);
+    var end = el('p', 'sq-end');
+    end.hidden = true;
+    list.parentNode.insertBefore(wrap, list);
+    wrap.appendChild(head); wrap.appendChild(list); wrap.appendChild(end);
+
+    function paint() {
+      scoreNum.textContent = String(right);
+      score.setAttribute('aria-label', 'Score: ' + right + ' of ' + total);
+      end.hidden = done < total;
+      if (done >= total) end.textContent = 'Done: ' + right + ' of ' + total + ' correct. The full key for the teacher is below.';
+    }
+
+    var items = lis.map(function (li, i) {
+      // the key leaves the page source of the widget and lives only here
+      var answer = li.getAttribute('data-answer'), explain = li.getAttribute('data-explain') || '';
+      li.removeAttribute('data-answer'); li.removeAttribute('data-explain');
+      li.setAttribute('data-q', String(i + 1));
+      var p = numbered(li, null, 'sq-text');
+      var group = el('div', 'sq-btns');
+      group.setAttribute('role', 'group');
+      group.setAttribute('aria-labelledby', p.id);
+      var fb = el('p', 'sq-fb');
+      fb.setAttribute('aria-live', 'polite');
+      fb.hidden = true;
+      var buttons = kind.options.map(function (o) {
+        var b = el('button', 'sq-btn', o[1]);
+        b.type = 'button'; b.value = o[0];
+        b.setAttribute('aria-pressed', 'false');
+        group.appendChild(b);
+        return b;
+      });
+      li.appendChild(group); li.appendChild(fb);
+
+      var item = { answered: false };
+      item.clear = function () {
+        item.answered = false;
+        li.classList.remove('is-right', 'is-wrong');
+        buttons.forEach(function (b) { b.disabled = false; b.className = 'sq-btn'; b.setAttribute('aria-pressed', 'false'); });
+        fb.hidden = true; fb.textContent = '';
+      };
+      group.addEventListener('click', function (e) {
+        var b = e.target.closest('.sq-btn');
+        if (!b || item.answered) return;
+        item.answered = true;
+        var ok = b.value === answer;
+        done += 1; if (ok) right += 1;
+        li.classList.add(ok ? 'is-right' : 'is-wrong');
+        b.setAttribute('aria-pressed', 'true');
+        b.classList.add(ok ? 'is-right' : 'is-wrong');
+        buttons.forEach(function (o) {
+          if (o === b) return;
+          o.disabled = true;
+          if (!ok && o.value === answer) o.classList.add('is-answer');
+        });
+        fb.textContent = '';
+        fb.appendChild(el('b', '', ok ? 'Right. ' : 'Not quite: ' + names[answer].toLowerCase() + '. '));
+        fb.appendChild(document.createTextNode(explain));
+        fb.hidden = false;
+        paint();
+      });
+      return item;
+    });
+
+    reset.addEventListener('click', function () {
+      right = 0; done = 0;
+      items.forEach(function (it) { it.clear(); });
+      paint();
+    });
+  });
 })();
