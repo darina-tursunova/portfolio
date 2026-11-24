@@ -279,7 +279,7 @@ if (location.protocol !== 'file:') {
     <ul class="key-ideas" data-reveal style="--d:3">
         <li>Presentation mode: arrow keys and full screen</li>
         <li>Online resources inside the quest (Task 3)</li>
-        <li>Two interactive tests that count the result (Task 8)</li>
+        <li>Self-check exercises that count the score (Task 3)</li>
         <li>An online questionnaire (Task 9)</li>
       </ul>
     </div>
@@ -299,10 +299,9 @@ if (location.protocol !== 'file:') {
         <path d="M224 70c8-6 12-6 18 0" fill="none" stroke="#F6B93B" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
       </svg>
       <p class="progress" data-done="0" data-total="0" data-reveal style="--d:2">The ICT product is this site</p>
-    <div class="task-cards task-cards--links" data-count="3">
+    <div class="task-cards task-cards--links" data-count="2">
         <a class="task-card task-card--mini" href="#task-3" data-task="3" data-reveal style="--d:3"><span class="task-n">Task 3</span><h3>Try the quest</h3><span class="mini-go"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></span></a>
-        <a class="task-card task-card--mini" href="#task-8" data-task="8" data-reveal style="--d:4"><span class="task-n">Task 8</span><h3>Take a test</h3><span class="mini-go"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></span></a>
-        <a class="task-card task-card--mini" href="#task-9" data-task="9" data-reveal style="--d:5"><span class="task-n">Task 9</span><h3>See the questionnaire</h3><span class="mini-go"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></span></a>
+        <a class="task-card task-card--mini" href="#task-9" data-task="9" data-reveal style="--d:4"><span class="task-n">Task 9</span><h3>See the questionnaire</h3><span class="mini-go"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></span></a>
       </div>
     </div>
   </section>
@@ -391,7 +390,7 @@ if (location.protocol !== 'file:') {
           <svg class="stamp" aria-hidden="true" focusable="false"><use href="#i-stamp"/></svg>
           <span class="task-n">Task 8</span>
           <h3>Two tests for defining leaders</h3>
-          <p>Two interactive tests for the 9th–11th form.</p>
+          <p>Two published tests: one for pupils, one for teachers.</p>
           <span class="task-open">Open the task <svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></span>
         </a>
         <a class="task-card" href="#task-9" data-task="9" data-reveal style="--d:4">
@@ -417,7 +416,7 @@ if (location.protocol !== 'file:') {
     <div class="reflection-grid">
       <div class="reflection-col" data-reveal style="--d:1"><span class="reflection-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>
         <h3>What worked</h3>
-        <p>The tasks became one system. The TEAMWORK rules organise the groups, the quest gives them work, the rubrics assess the result, and the tests help to choose the managers.</p>
+        <p>The tasks became one system. The TEAMWORK rules organise the groups, the quest gives them work, the rubrics assess the result, and a leadership test helps to choose the managers.</p>
       </div>
       <div class="reflection-col" data-reveal style="--d:2"><span class="reflection-ico" aria-hidden="true"><svg aria-hidden="true" focusable="false"><use href="#i-peak"/></svg></span>
         <h3>What was difficult</h3>
@@ -1601,193 +1600,145 @@ if (location.protocol !== 'file:') {
       <section class="block block--aim" id="task-8-aim">
         <h3>Aim</h3>
         <div class="block-body">
-          <p>To have two quick tools for the classroom. The first shows whether a pupil has leadership potential. The second shows what kind of leader he or she is.</p>
+          <p>To choose two published tests, one for pupils and one for teachers, and to understand how they are built and scored.</p>
         </div>
       </section>
 
       <section class="block block--work" id="task-8-work">
         <h3>My work</h3>
         <div class="block-body">
-          <p>I made both tests myself on the basis of the lecture. They are for pupils of the 9th–11th form and take about five minutes each. You can try them right here: choose the answers and press the button.</p>
+          <p>I looked for tests that are published together with the rules for reading the result and that fit into one lesson. I chose two. The first defines the leadership qualities of pupils. The second defines the leadership qualities of teachers. Below I describe each test in the same order and give its source.</p>
 
           <!-- ===================== TEST 1 ===================== -->
-          <section class="test" id="test-keys" data-test="keys">
+          <section class="test" id="test-pupils" data-test="pupils">
             <header class="test-head">
-              <p class="test-n">Test 1</p>
-              <h4>Five keys of a leader</h4>
-              <p class="test-meta">Self-assessment · 15 statements · 5 minutes</p>
+              <p class="test-n">Test 1 · For pupils</p>
+              <h4>Diagnostics of Leadership Abilities</h4>
+              <p class="test-meta">E. Zharikov, E. Krushelnitsky · 50 statements · one total score</p>
             </header>
-            <p><strong>What it shows:</strong> the level of leadership potential and the strongest and the weakest of five qualities. In the lecture these qualities are called the ways of gaining leadership: sensitivity to people, the ability to define a goal, an optimistic outlook, communication and initiative.</p>
-            <p><strong>Instruction for the pupil:</strong> read each statement and choose how often it is true about you. There are no right or wrong answers.</p>
+            <div class="test-body">
+              <dl class="test-facts">
+                <div><dt>Original name</dt><dd><span lang="ru">Диагностика лидерских способностей (Е. Жариков, Е. Крушельницкий)</span>. The same questionnaire is also published under the name “Leader” (<span lang="ru">«Лидер»</span>).</dd></div>
+                <div><dt>Authors and year</dt><dd>E. Zharikov and E. Krushelnitsky, as they are named in the handbook by N. Fetiskin, V. Kozlov and G. Manuilov (2002). I did not find the year when the test was first written.</dd></div>
+                <div><dt>For whom</dt><dd>The handbook gives no age range. It places the test in the part about leadership in small groups, and a few statements are written for working adults. I chose it for pupils of the 9th–11th form, and I would explain these statements in school terms.</dd></div>
+                <div><dt>What it measures</dt><dd>How strongly the personal qualities of a leader are expressed. The handbook says that the ability to lead depends largely on organisational and communicative qualities.</dd></div>
+                <div><dt>Structure</dt><dd>50 statements. Each one has two answers, a) and b). Most of them are “yes” or “no”, and some offer two short phrases to choose from. There is no middle answer, and the pupil should not think long. The sources give no time limit. I would plan one lesson together with the counting.</dd></div>
+                <div><dt>Scoring</dt><dd>One point for each answer that matches the key. The points are added into one total, and the maximum is 50. The key is printed in the handbook.</dd></div>
+              </dl>
 
-            <form class="quiz quiz--scale" data-quiz="keys" novalidate>
-              <p class="scale-legend"><span>0 · Never</span><span>1 · Sometimes</span><span>2 · Often</span><span>3 · Always</span></p>
+              <div class="test-part">
+                <h5>Levels of the result</h5>
+                <table class="key-table">
+                  <thead><tr><th scope="col">Points</th><th scope="col">Level in the handbook</th><th scope="col">How I would use the result</th></tr></thead>
+                  <tbody>
+                    <tr data-level="low"><th scope="row">Less than 25</th><td>Weakly expressed</td><td>The pupil does not show the qualities of a leader yet. I would start with small roles, for example the secretary of a group.</td></tr>
+                    <tr data-level="mid"><th scope="row">26–35</th><td>Medium level</td><td>The pupil can lead in some situations. I would offer the role of the group captain from time to time.</td></tr>
+                    <tr data-level="high"><th scope="row">36–40</th><td>Strongly expressed</td><td>The pupil is ready for organiser roles: the captain of a group, the class council, school events.</td></tr>
+                    <tr data-level="top"><th scope="row">More than 40</th><td>Inclined to dictate</td><td>The pupil may put pressure on the others. I would give roles where he or she has to listen and to agree with the group.</td></tr>
+                  </tbody>
+                </table>
+                <p class="test-small">The first two columns come from the handbook. The last column is my reading as a teacher. In the handbook exactly 25 points belong to no level. Another published copy of the test puts 25 into the weak level, and I would do the same.</p>
+              </div>
 
-              <fieldset class="quiz-group" data-key="sensitivity">
-                <legend>Sensitivity to people</legend>
-                <ol class="quiz-items" start="1">
-                  <li data-q="1">I notice when a classmate is upset, even if he or she says nothing.</li>
-                  <li data-q="2">I notice when somebody in the group is left out of the work.</li>
-                  <li data-q="3">I can feel when the mood in the group changes.</li>
-                </ol>
-              </fieldset>
-              <fieldset class="quiz-group" data-key="goal">
-                <legend>Goal setting</legend>
-                <ol class="quiz-items" start="4">
-                  <li data-q="4">When we get a task, I quickly understand what result we need.</li>
-                  <li data-q="5">I can divide a big task into small steps.</li>
-                  <li data-q="6">I keep working towards the goal even when the work becomes boring.</li>
-                </ol>
-              </fieldset>
-              <fieldset class="quiz-group" data-key="optimism">
-                <legend>Optimism</legend>
-                <ol class="quiz-items" start="7">
-                  <li data-q="7">When something goes wrong, I believe that we can find a solution.</li>
-                  <li data-q="8">I believe that our group can do the task well.</li>
-                  <li data-q="9">Even after a failure I am sure that next time will be better.</li>
-                </ol>
-              </fieldset>
-              <fieldset class="quiz-group" data-key="communication">
-                <legend>Communication</legend>
-                <ol class="quiz-items" start="10">
-                  <li data-q="10">I can explain my idea so that everyone understands it.</li>
-                  <li data-q="11">It is easy for me to talk to classmates I do not know well.</li>
-                  <li data-q="12">In an argument I can help two sides to agree.</li>
-                </ol>
-              </fieldset>
-              <fieldset class="quiz-group" data-key="initiative">
-                <legend>Initiative</legend>
-                <ol class="quiz-items" start="13">
-                  <li data-q="13">I am usually the first to suggest what to do.</li>
-                  <li data-q="14">I start a new task without waiting for a reminder.</li>
-                  <li data-q="15">I offer my help without waiting to be asked.</li>
-                </ol>
-              </fieldset>
+              <div class="test-part">
+                <h5>Examples of statements (my translation)</h5>
+                <ul class="test-examples">
+                  <li>Are you often in the centre of other people’s attention? <em>yes / no</em></li>
+                  <li>As a child, did you like to be the leader among children of your age? <em>yes / no</em></li>
+                  <li>If your plan fails, are you glad when somebody else takes the responsibility, or do you take it and finish the work? <em>two answers</em></li>
+                  <li>When you meet difficulties, do you give up, or do you feel a strong wish to overcome them? <em>two answers</em></li>
+                </ul>
+              </div>
 
-              <p class="quiz-actions"><button type="submit" class="btn">Show my result</button> <button type="reset" class="btn btn--ghost">Clear</button></p>
-              <div class="quiz-result" data-result aria-live="polite" hidden></div>
-            </form>
+              <div class="test-part">
+                <h5>How I would use it at school</h5>
+                <p>I would give the form to the class at the beginning of the school year or before a long project. The pupils mark a) or b) for each statement, and I count the points with the key. Some statements speak about work, so I would explain them in school terms, for example “your position at work” as “your position in the class”. The result helps me to see who can be a group captain, who needs support to become more active and who tends to dominate the others. After that I check the result by observation in real group work.</p>
+              </div>
 
-            <div class="test-key">
-              <h5>Key and interpretation</h5>
-              <p>Never = 0, Sometimes = 1, Often = 2, Always = 3. The maximum is 45 points, or 9 points for each key.</p>
-              <table class="key-table">
-                <thead><tr><th scope="col">Points</th><th scope="col">Level</th><th scope="col">What it means for the teacher</th></tr></thead>
-                <tbody>
-                  <tr data-level="high"><th scope="row">31–45</th><td>Universal leader</td><td>The pupil is ready to take responsibility. Give him or her the role of the manager, but also teach him or her to listen to the quiet members.</td></tr>
-                  <tr data-level="mid"><th scope="row">16–30</th><td>Situational leader</td><td>The pupil leads when the task is close to him or her. Offer the leading role in the topics he or she is good at.</td></tr>
-                  <tr data-level="low"><th scope="row">0–15</th><td>Team player for now</td><td>Leadership is not shown yet, but it can be developed. Start with small roles: the writer or the speaker of the group.</td></tr>
-                </tbody>
-              </table>
-              <p>The key with the lowest score shows which quality to train first.</p>
+              <div class="test-source">
+                <p class="test-source-label">Source</p>
+                <p class="test-ref"><span lang="ru">Фетискин Н. П., Козлов В. В., Мануйлов Г. М. Социально-психологическая диагностика развития личности и малых групп: учебное пособие. Москва: Изд-во Института Психотерапии, 2002. Глава VI, п. 6.3.1 «Диагностика лидерских способностей (Е. Жариков, Е. Крушельницкий)».</span></p>
+                <p class="test-links"><a href="https://resource.odmu.edu.ua/chair/download/90825/rAINHLrp4Y1YYNcgR-807A/%D0%A4%D0%B5%D1%82%D0%B8%D1%81%D0%BA%D0%B8%D0%BD%2C%20%D0%9A%D0%BE%D0%B7%D0%BB%D0%BE%D0%B2%20%D0%A1%D0%BE%D1%86-%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D1%8F%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%B8%20%D0%BC%D0%B0%D0%BB%D1%8B%D1%85%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF.pdf" target="_blank" rel="noopener">The handbook (PDF)</a> <a href="https://psytests.org/work/dlsjk.html" target="_blank" rel="noopener">The same test on psytests.org</a></p>
+                <p class="test-full">The full text of the test is in the source.</p>
+              </div>
             </div>
           </section>
 
           <!-- ===================== TEST 2 ===================== -->
-          <section class="test" id="test-style" data-test="style">
+          <section class="test" id="test-teachers" data-test="teachers">
             <header class="test-head">
-              <p class="test-n">Test 2</p>
-              <h4>What kind of leader are you?</h4>
-              <p class="test-meta">Situational test · 8 situations · 5 minutes</p>
+              <p class="test-n">Test 2 · For teachers</p>
+              <h4>Teacher Leader Self-Assessment</h4>
+              <p class="test-meta">CSTP, 2009, revised 2018 · six areas · four levels</p>
             </header>
-            <p><strong>What it shows:</strong> the style of a leader. The lecture divides leaders by the style of activity into authoritarian, democratic and liberal.</p>
-            <p><strong>Instruction for the pupil:</strong> imagine that you are the manager of a group. For each situation choose the answer that is closest to what you would really do.</p>
+            <div class="test-body">
+              <dl class="test-facts">
+                <div><dt>Authors and year</dt><dd>Center for Strengthening the Teaching Profession (CSTP), Washington State, USA. The tool names no individual authors. The copyright years on it are 2009 and 2018. It is a part of the CSTP Teacher Leadership Framework.</dd></div>
+                <div><dt>For whom</dt><dd>Practising teachers who lead colleagues or want to lead them: a mentor, a coach, the head of a team or a department, a facilitator of a teachers’ group.</dd></div>
+                <div><dt>What it measures</dt><dd>How the teacher rates his or her own knowledge, skills and dispositions in six areas: working with adult learners, communication, collaboration, knowledge of content and pedagogy, systems thinking and equity lens.</dd></div>
+                <div><dt>Structure</dt><dd>Six sections on 13 pages. Each section is a separate self-assessment. All statements begin with “I”. By my count there are 123 statements, from 15 to 35 in a section. There are four answers: Consistently, Usually, Occasionally, Rarely. Next to them there is a column for the evidence. The source gives no time limit. One section can be done as a short test.</dd></div>
+                <div><dt>Scoring</dt><dd>There are no points and no key. The teacher ticks how often each statement is true, writes the evidence and answers a reflection question after each block. Then he or she chooses one of four levels for the whole section and writes the next steps.</dd></div>
+              </dl>
 
-            <form class="quiz quiz--choice" data-quiz="style" novalidate>
-              <ol class="situations">
-                <li data-q="1">
-                  <p class="sit">Your group gets a project and one week to do it. What do you do first?</p>
-                  <ul class="options">
-                    <li data-style="A">I share the tasks myself: I know who does what best.</li>
-                    <li data-style="D">I ask everyone what they want to do, and we decide together.</li>
-                    <li data-style="L">I let everyone take the part he or she likes. I trust my group.</li>
-                  </ul>
-                </li>
-                <li data-q="2">
-                  <p class="sit">Two members of your group cannot agree.</p>
-                  <ul class="options">
-                    <li data-style="D">I listen to both and help them find a common decision.</li>
-                    <li data-style="L">I give them time. I trust them to solve it themselves.</li>
-                    <li data-style="A">I decide which idea we take, so that the group can move on.</li>
-                  </ul>
-                </li>
-                <li data-q="3">
-                  <p class="sit">One member of the group does nothing.</p>
-                  <ul class="options">
-                    <li data-style="L">I do not push. He or she will join in when ready.</li>
-                    <li data-style="A">I say exactly what to do and check it later.</li>
-                    <li data-style="D">I ask what the problem is and offer a task he or she likes.</li>
-                  </ul>
-                </li>
-                <li data-q="4">
-                  <p class="sit">The deadline is tomorrow and the work is not ready.</p>
-                  <ul class="options">
-                    <li data-style="A">I take control and tell everyone what to finish tonight.</li>
-                    <li data-style="D">We meet quickly, see what is left and share it fairly.</li>
-                    <li data-style="L">I remind everyone of the deadline and trust each member to finish his or her part.</li>
-                  </ul>
-                </li>
-                <li data-q="5">
-                  <p class="sit">A member suggests an idea that you do not like.</p>
-                  <ul class="options">
-                    <li data-style="L">I let the member try the idea in his or her part of the work.</li>
-                    <li data-style="D">I ask the group to discuss it and to vote.</li>
-                    <li data-style="A">I say no and explain that we must keep to the plan.</li>
-                  </ul>
-                </li>
-                <li data-q="6">
-                  <p class="sit">The group has done the work very well. Who presents it?</p>
-                  <ul class="options">
-                    <li data-style="D">We decide together who presents, and we thank everyone.</li>
-                    <li data-style="A">I present it myself, because I am responsible for the result.</li>
-                    <li data-style="L">Anyone who wants to can present it.</li>
-                  </ul>
-                </li>
-                <li data-q="7">
-                  <p class="sit">The teacher criticises the work of your group.</p>
-                  <ul class="options">
-                    <li data-style="A">I decide what must be corrected and who will do it.</li>
-                    <li data-style="L">I pass the comments on to the group. Everyone decides what to change in his or her part.</li>
-                    <li data-style="D">We analyse together what went wrong and how to improve it.</li>
-                  </ul>
-                </li>
-                <li data-q="8">
-                  <p class="sit">Your group starts a new project. What will you care about most?</p>
-                  <ul class="options">
-                    <li data-style="L">Freedom for every member.</li>
-                    <li data-style="A">Discipline and a result on time.</li>
-                    <li data-style="D">A team where everyone is heard.</li>
-                  </ul>
-                </li>
-              </ol>
+              <div class="test-part">
+                <h5>Levels of the result</h5>
+                <table class="key-table key-table--levels">
+                  <thead><tr><th scope="col">Level</th><th scope="col">What it means</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Refining</th><td>The teacher does this well and also helps colleagues to do the same.</td></tr>
+                    <tr><th scope="row">Proficient</th><td>The teacher uses the skills of this area regularly and on purpose in his or her own leadership work.</td></tr>
+                    <tr><th scope="row">Developing</th><td>The teacher has some success. The skills work in some situations but not in all, and he or she is working on them.</td></tr>
+                    <tr><th scope="row">Emerging</th><td>The teacher understands why the area is important, has seen such work or taken part in it and plans to build the skills.</td></tr>
+                  </tbody>
+                </table>
+                <p class="test-small">The names of the levels come from the tool. The descriptions are my short summary. The result is read for each area separately, so there is no total score.</p>
+              </div>
 
-              <p class="quiz-actions"><button type="submit" class="btn">Show my style</button> <button type="reset" class="btn btn--ghost">Clear</button></p>
-              <div class="quiz-result" data-result aria-live="polite" hidden></div>
-            </form>
+              <div class="test-part">
+                <h5>Examples of statements (in my own words)</h5>
+                <ul class="test-examples">
+                  <li>I listen carefully to every participant to understand what he or she really means. <em>Working with adult learners</em></li>
+                  <li>I give feedback to colleagues and take it from them in an honest and useful way. <em>Communication</em></li>
+                  <li>I pass a part of the responsibility to others, so that the group works better. <em>Collaboration</em></li>
+                  <li>I can tell the group that I am wrong or that I do not know something. <em>Collaboration</em></li>
+                </ul>
+              </div>
 
-            <div class="test-key">
-              <h5>Key and interpretation</h5>
-              <p>Count which style the pupil chose most often. If two styles have the same number of answers, the pupil mixes them.</p>
-              <table class="key-table">
-                <thead><tr><th scope="col">Style</th><th scope="col">Strong side</th><th scope="col">Risk</th></tr></thead>
-                <tbody>
-                  <tr data-style="A"><th scope="row">Authoritarian</th><td>Fast decisions and order. Useful when time is short.</td><td>The others stop thinking and only follow. Taken to the extreme, this style becomes what the lecture calls tyranny.</td></tr>
-                  <tr data-style="D"><th scope="row">Democratic</th><td>Everyone is heard, so the group supports the decision.</td><td>Decisions take more time. The leader has to stop the discussion at the right moment.</td></tr>
-                  <tr data-style="L"><th scope="row">Liberal</th><td>Freedom and trust. It works in a strong, motivated group.</td><td>Nobody is responsible for the result. Taken to the extreme, this style becomes what the lecture calls absence of initiative.</td></tr>
-                </tbody>
-              </table>
-              <p class="answer-key"><strong>Answer key</strong> (A = authoritarian, D = democratic, L = liberal; the order of the options in each situation): 1&nbsp;A&nbsp;D&nbsp;L · 2&nbsp;D&nbsp;L&nbsp;A · 3&nbsp;L&nbsp;A&nbsp;D · 4&nbsp;A&nbsp;D&nbsp;L · 5&nbsp;L&nbsp;D&nbsp;A · 6&nbsp;D&nbsp;A&nbsp;L · 7&nbsp;A&nbsp;L&nbsp;D · 8&nbsp;L&nbsp;A&nbsp;D</p>
+              <div class="test-part">
+                <h5>How I would use it at school</h5>
+                <p>Each section begins with a request to think of a leadership role, the one the teacher has or the one he or she wants. As a young teacher I would choose a role I want, for example the leader of a Lesson Study group (<a href="#task-7">Task 7</a>). I would start with two sections, Communication and Collaboration. They are short (19 and 18 statements) and close to everyday work. I would not start with Equity Lens, because it is written for the American school context. The tool is in English, and I did not find an official Russian or Kazakh translation. I would repeat the same sections a year later to see my growth.</p>
+              </div>
+
+              <div class="test-source">
+                <p class="test-source-label">Source</p>
+                <p class="test-ref">Center for Strengthening the Teaching Profession (CSTP). (2009, revised 2018). Teacher Leader Self-Assessment. www.cstp-wa.org.</p>
+                <p class="test-links"><a href="https://cstp-wa.org/cstp2013/wp-content/uploads/2019/10/2018-TLF-Self-Assessments-BW.pdf" target="_blank" rel="noopener">The self-assessment (PDF)</a> <a href="https://cstp-wa.org/teacher-leadership/teacher-leadership-skills-framework/" target="_blank" rel="noopener">The publisher’s page</a></p>
+                <p class="test-full">The full text of the test is in the source.</p>
+              </div>
             </div>
           </section>
 
+          <section class="test-compare">
+            <h4>The two tests side by side</h4>
+            <table class="key-table key-table--compare">
+              <thead><tr><th scope="col"><span class="vh">Feature</span></th><th scope="col">Test 1 · pupils</th><th scope="col">Test 2 · teachers</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">For whom</th><td>Pupils of the 9th–11th form (my choice; the handbook gives no age).</td><td>Teachers who lead colleagues or want to.</td></tr>
+                <tr><th scope="row">What it measures</th><td>The general level of leadership qualities.</td><td>Leadership knowledge, skills and dispositions in six areas.</td></tr>
+                <tr><th scope="row">Items and format</th><td>50 statements, answer a) or b).</td><td>123 statements in six sections, four answers from Consistently to Rarely.</td></tr>
+                <tr><th scope="row">Time</th><td>No limit in the sources. I plan one lesson.</td><td>No limit in the source. One section can be done in one sitting.</td></tr>
+                <tr><th scope="row">Result</th><td>One number from 0 to 50 and one of four levels.</td><td>One of four levels for each area and a list of next steps. No points.</td></tr>
+              </tbody>
+            </table>
+          </section>
+
           <section class="test-use">
-            <h4>How I would use the tests</h4>
+            <h4>How the two tests work together</h4>
             <ul>
-              <li>Test 1 before a long project, to choose the managers of the groups and to see who needs a small first role.</li>
-              <li>Test 2 after the project, as a reflection for the managers: “Was my style good for my group?”</li>
-              <li>Together with observation and J. Moreno’s sociometry from the lecture. A self-assessment shows how a pupil sees himself or herself. Sociometry shows whom the class really chooses.</li>
+              <li>Test 1 shows me which pupils can take organiser roles. Test 2 shows how ready I am to lead adults. A teacher who looks for leaders in the class should also know herself as a leader.</li>
+              <li>Both tests are self-assessments. They show how a person sees himself or herself. For this reason the lecture also names J. Moreno’s sociometry, which shows whom the class really chooses.</li>
+              <li>The results have different forms. One number is quick to read for a whole class. Levels in separate areas are better for a personal plan of development.</li>
             </ul>
-            <p class="note">Both tests are my own express tools based on the lecture (the ways of gaining leadership and B. Parygin’s classification of leaders by style). They are not standardised psychological tests, so I would use the results to start a conversation, not to put a label on a pupil.</p>
           </section>
         </div>
       </section>
@@ -1796,7 +1747,7 @@ if (location.protocol !== 'file:') {
         <h3>What I learned</h3>
         <div class="block-body">
           <svg class="stamp" aria-hidden="true" focusable="false"><use href="#i-stamp"/></svg>
-          <p>I learned that a leader is not one type of person. The lecture names leaders by activity, by content, by style and by formality, and each type is useful in its own situation. To write the statements I had to turn abstract qualities into behaviour that a teenager can recognise in himself or herself. I also understood the limit of any test: it is only the first step, and the teacher has to check the result in real group work.</p>
+          <p>I learned how a published test is built. It has statements, rules for scoring and levels that explain the result. Not every test gives points: the first one has a key and one number, and the second one asks the teacher to choose a level and to write the next steps. I also understood that a test result is a starting point for observation and a conversation, not a label on a pupil or a teacher. Now, before I use a test, I check who the author is and where the test was published.</p>
         </div>
       </section>
 

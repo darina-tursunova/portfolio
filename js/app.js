@@ -100,7 +100,7 @@
   document.addEventListener('keydown', function (e) {
     if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
     var t = e.target, tag = t && t.tagName;
-    // typing fields keep their keys; radio buttons and checkboxes (the tests in Task 8) do not block Esc and F
+    // typing fields keep their keys; radio buttons and checkboxes do not block Esc and F
     var choice = tag === 'INPUT' && /^(radio|checkbox)$/i.test(t.type || '');
     if ((tag === 'INPUT' && !choice) || tag === 'TEXTAREA' || tag === 'SELECT' || (t && t.isContentEditable)) return;
     var key = e.key;

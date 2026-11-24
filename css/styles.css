@@ -744,6 +744,29 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
 .key-table tr.is-yours { background: var(--sand); box-shadow: inset .35rem 0 0 var(--coral); }
 .answer-key { font-size: .94rem; color: var(--muted); }
 .answer-key strong { color: var(--pine); }
+.test-body { padding: 1.15rem 1.15rem 1.3rem; }
+.test-facts { margin: 0; display: grid; }
+.test-facts > div { padding: .7rem 0 .75rem; border-bottom: 1.5px dashed var(--sand-2); }
+.test-facts > div:first-child { padding-top: 0; }
+.test-facts dt { font: 600 .76rem/1.3 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 .25rem; }
+.test-facts dd { margin: 0; line-height: 1.5; max-width: 44rem; }
+.test-part { margin-top: 1.5rem; }
+.test-part h5 { font: 600 1.18rem/1.2 var(--display); color: var(--pine); margin: 0 0 .6rem; }
+.test-part p { margin: 0; max-width: 44rem; line-height: 1.5; }
+.test-part .key-table { margin: .2rem 0 .8rem; }
+.test-part .test-small { font-size: .94rem; color: var(--muted); }
+.key-table--compare tbody th { white-space: normal; }
+.test-examples { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.test-examples li { background: var(--paper); border: 1.5px solid var(--sand-2); border-left: .35rem solid var(--sun); border-radius: .8rem; padding: .65rem .9rem .7rem; line-height: 1.4; font-weight: 700; color: var(--pine); }
+.test-examples em { display: block; margin-top: .25rem; font: 600 .76rem/1.3 var(--display); font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.test-source { margin-top: 1.6rem; background: var(--sand); border-radius: 1rem; padding: 1rem 1.1rem 1.1rem; box-shadow: inset .35rem 0 0 var(--coral); }
+.test-source p { margin: 0; max-width: 46rem; line-height: 1.5; overflow-wrap: anywhere; }
+.test-source .test-source-label { font: 600 .8rem/1.2 var(--display); letter-spacing: .13em; text-transform: uppercase; color: var(--brick); margin-bottom: .45rem; }
+.test-source .test-ref { font-size: .98rem; }
+.test-source .test-links { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: .65rem; }
+.test-source .test-full { margin-top: .65rem; font-weight: 700; color: var(--pine); }
+.test-compare { margin-top: 2.2rem; }
+.block--work .test-compare h4 { margin: 0 0 .6rem; }
 .test-use { margin-top: 2rem; }
 .note { margin: 1.2rem 0 0; border-left: .3rem solid var(--sand-2); padding-left: .95rem; color: var(--muted); font-size: .96rem; line-height: 1.5; max-width: 44rem; }
 
@@ -796,6 +819,14 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
   .block--work .essay-title { font-size: 1.95rem; }
   .essay-map ol { grid-template-columns: 1fr 1fr; }
   .test-head { padding: 1.4rem 1.6rem 1.5rem; }
+  .test-body { padding: 1.4rem 1.6rem 1.6rem; }
+  .test-facts > div { display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); column-gap: 1.2rem; align-items: baseline; }
+  .test-facts dt { margin: 0; }
+  .test-examples { grid-template-columns: 1fr 1fr; }
+  .key-table--levels tbody th { width: 10.5rem; }
+  .key-table tr[data-level] td:first-of-type { width: 11.5rem; }
+  .key-table--compare tbody th { width: 10.5rem; }
+  .key-table--compare td { width: 42%; }
   .test > p, .test > .quiz, .test > .test-key { margin-left: 1.6rem; margin-right: 1.6rem; }
   .quiz-enhanced .quiz-items li { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: 1rem; align-items: center; padding: .7rem .8rem .7rem 1rem; }
   .q-text { margin: 0; }
@@ -832,7 +863,7 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
   .task-cards[data-count="3"]:not(.task-cards--links) .task-open { grid-area: open; min-height: 2.5rem; padding: .35rem .95rem; font-size: .98rem; white-space: nowrap; }
   .task-cards[data-count="3"]:not(.task-cards--links) .stamp { width: 3.2rem; height: 3.2rem; top: .6rem; right: .8rem; }
 
-  /* Module 4: the site itself + three link cards */
+  /* Module 4: the site itself + link cards */
   .devices { width: 17rem; margin-bottom: 1.6rem; }
   .task-cards--links { gap: .85rem; }
   .task-card--mini { padding: .8rem 1rem .8rem 1.4rem; }
@@ -886,7 +917,7 @@ button.btn { border: 0; font: 700 1rem/1.2 var(--text); cursor: pointer; }
   .js .hl-route path, .js .map-draw { stroke-dashoffset: 0 !important; }
   .rubric--analytic td { display: block !important; }
   .block > h3 { position: static !important; }
-  .rules li, .rubric tr, .questionnaire > li, .interview > li, .quiz-items li, .situations > li, .key-table tr, .task-card, .reflection-col { break-inside: avoid; }
+  .rules li, .rubric tr, .questionnaire > li, .interview > li, .quiz-items li, .situations > li, .key-table tr, .test-examples li, .test-source, .task-card, .reflection-col { break-inside: avoid; }
   .task-card, .btn { box-shadow: none !important; }
 }
 @media print and (min-width: 900px) {
